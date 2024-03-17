@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="popup.css" />
+		<title>Remind Me</title>
+	</head>
+	<body>
+		<template id="reminder_template">
+			<li class="reminder">
+				<p class="title">Reminder Title</p>
+				<button class="button_primary edit_reminder">Edit</button>
+				<button class="button_secondary cancel_reminder">Delete</button>
+			</li>
+		</template>
+		<header class="header">
+			<img class="logo" src="../icons/logo-48.png" alt="alarm clock" />
+			<h1 class="heading-large">Remind Me</h1>
+		</header>
+		<main>
+			<form id="reminder_form" class="reminder_form remove">
+				<label class="visually-hidden" for="reminder_name"
+					>Reminder Title</label
+				>
+				<input
+					class="reminder_name input_primary"
+					id="reminder_name"
+					name="reminder_name"
+					placeholder="Add Reminder"
+					type="text"
+				/>
+				<label class="visually-hidden" for="reminder_date">Reminder date</label>
+				<input
+					class="reminder_date input_primary"
+					id="reminder_date"
+					name="reminder_date"
+					type="datetime-local"
+				/>
+				<div class="form_actions">
+					<input
+						id="submit_reminder"
+						class="button_primary"
+						type="submit"
+						value="Add"
+					/>
+					<input
+						id="cancel_reminder"
+						class="button_secondary"
+						type="button"
+						value="Cancel"
+					/>
+				</div>
+			</form>
+
+			<div class="reminders_container">
+				<h2 class="heading-small">Reminders</h2>
+				<ul id="reminders" class="reminders"></ul>
+			</div>
+
+			<button id="add_reminder" class="button_primary add_reminder">
+				Add New Reminder
+			</button>
+		</main>
+	</body>
+	<script src="popup.js"></script>
+</html>

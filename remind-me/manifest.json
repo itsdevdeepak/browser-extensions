@@ -1,0 +1,17 @@
+{
+	"manifest_version": 3,
+	"name": "Remind Me",
+	"version": "1.0",
+	"description": "Set the reminder for the task with notifications.",
+	"icons": {
+		"48": "icons/logo-48.png",
+		"98": "icons/logo-98.png"
+	},
+	"permissions": ["alarms", "notifications", "storage"],
+	"background": {
+		"scripts": ["background/background.js"]
+	},
+	"action": {
+		"default_popup": "popup/popup.html"
+	}
+}
