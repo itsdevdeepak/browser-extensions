@@ -156,14 +156,15 @@ input[type="datetime-local"].input_primary {
   font-style: italic;
 }
 
-/* f58420 */
-/* #6f9cac; */
-/* #ef4823; */
+.text-small {
+  font-size: 0.85rem;
+  color: #1d1d1d;
+  font-style: italic;
+}
 
 .remove {
   display: none;
 }
-
 
 .visually-hidden {
   border: 0 !important;
